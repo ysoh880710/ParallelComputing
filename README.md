@@ -14,22 +14,31 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"The primary goal of parallel computing is to increase available computation power for faster application processing and problem solving." ([Parallel Computing Definition, heavy.ai](https://www.heavy.ai/technical-glossary/parallel-computing))
 
-*note : [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
+*Keyword note : [Speedup](https://en.wikipedia.org/wiki/Speedup), [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
 
 ## What types of parallelism are there?
 
 - Bit-level parallelism
 - Instruction-level parallelism
-- [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)
+- Task parallelism
 - Superword level parallelism
+
+([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
+
+- Data parallelism
+- Task parallelism
+- Bit-level parallelism
+- Instruction-level parallelism
+
+([Types of Parallelism in Processing Execution, tutorialspoint](https://www.tutorialspoint.com/types-of-parallelism-in-processing-execution))
 
 ## What is [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
 
->"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on distributing tasks—concurrently performed by processes or threads—across different processors." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
+>"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) environments. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on distributing tasks—[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) performed by processes or [threads](https://en.wikipedia.org/wiki/Thread_(computing))—across different processors." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
 ## How can [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) be achieved?
 
->"In a multiprocessor system, [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is achieved when each processor executes a different [thread](https://en.wikipedia.org/wiki/Thread_(computing)) (or process) on the same or different data." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
+>"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system, [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is achieved when each processor executes a different [thread](https://en.wikipedia.org/wiki/Thread_(computing)) (or process) on the same or different data." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
 ## What is [Thread](https://en.wikipedia.org/wiki/Thread_(computing))?
 
@@ -44,6 +53,8 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 ![Multithreading](https://www.logicbig.com/quick-info/images/multithreading.png)
 
 >"[Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple threads of execution concurrently, supported by the operating system" ([Multithreading, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
+
+>"[Multithreading](https://en.wikipedia.org/wiki/Thread_(computing)) can also be applied to one process to enable parallel execution on a multiprocessing system."
 
 ## What is [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
