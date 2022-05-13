@@ -16,7 +16,7 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 *Keyword note : [Speedup](https://en.wikipedia.org/wiki/Speedup), [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
 
-## What types of parallelism are there?
+## What are the types of parallelism?
 
 >"There are several different forms of parallel computing: [bit-level](https://en.wikipedia.org/wiki/Bit-level_parallelism), [instruction-level](https://en.wikipedia.org/wiki/Instruction-level_parallelism), [data](https://en.wikipedia.org/wiki/Data_parallelism), and [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)." ([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
 
@@ -33,13 +33,23 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"[Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is parallelization across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments."
 
+## How to achieve [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)?
+
 >"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system executing a [single set of instructions (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data), [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is achieved when each processor performs the same task on different distributed data."
 
-SSE instructions using xmm registers seem the example of parallel computing achieving data parallelism.
+### What is [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)?
 
-*"[Streaming SIMD Extensions](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) (SSE) is a [single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instruction set extension to the x86 architecture, designed by Intel and introduced in 1999 in their Pentium III series of Central processing units (CPUs) shortly after the appearance of Advanced Micro Devices (AMD's) 3DNow!." ([Streaming SIMD Extensions, wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions))
+>"[Single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is a type of parallel processing in Flynn's taxonomy."
 
-*Keyword note : [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data), [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)
+>"The first widely deployed desktop [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) was with Intel's MMX extensions to the x86 architecture in 1996. This sparked the introduction of the much more powerful AltiVec system in the Motorola PowerPC and IBM's POWER systems. Intel responded in 1999 by introducing the all-new [SSE]() system."
+
+### What is [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)?
+
+>"[Streaming SIMD Extensions (SSE)](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) is a [single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instruction set extension to the x86 architecture, designed by Intel and introduced in 1999 in their Pentium III series of Central processing units (CPUs) shortly after the appearance of Advanced Micro Devices (AMD's) 3DNow!." ([Streaming SIMD Extensions, wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions))
+
+### What is the difference between [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) and [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)?
+
+>"[SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is the 'concept', [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/AVX are implementations of the concept." ([What's the difference between SIMD and SSE?, stackoverflow](https://stackoverflow.com/questions/30282271/whats-the-difference-between-simd-and-sse))
 
 ## What is [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
 
