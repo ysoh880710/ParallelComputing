@@ -2,6 +2,8 @@
 
 ## Definition
 
+![Parallel computing](https://www.researchgate.net/publication/324215607/figure/fig3/AS:779408600227843@1562836899291/Serial-algorithm-and-parallel-computing.gif)
+
 >"[Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) is a type of computation in which many calculations or processes are carried out simultaneously." ([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
 
 ## What are advantages of [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)?
@@ -43,6 +45,12 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"The first widely deployed desktop [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) was with Intel's MMX extensions to the x86 architecture in 1996. This sparked the introduction of the much more powerful AltiVec system in the Motorola PowerPC and IBM's POWER systems. Intel responded in 1999 by introducing the all-new [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) system." ([Single instruction, multiple data, wikipedia](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data))
 
+### Does [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) require [multi-core](https://en.wikipedia.org/wiki/Multi-core_processor) CPU?
+
+>"No. "SI" = single instruction, "MD" = multiple data. The core needs to have, say, 4 multiplier circuits available so the single instruction can multiply 4 numbers at the same time. The parallelism is in the core itself." ([Does SIMD require a multi-core CPU?, stackoverflow](https://stackoverflow.com/questions/49810600/does-simd-require-a-multi-core-cpu))
+
+>"Every core has its own independent [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) execution units. Using [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instructions in one core doesn't cost execution resources in other cores." ([Does SIMD require a multi-core CPU?, stackoverflow](https://stackoverflow.com/questions/49810600/does-simd-require-a-multi-core-cpu))
+
 ### What is [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)?
 
 >"[Streaming SIMD Extensions (SSE)](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) is a [single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instruction set extension to the x86 architecture, designed by Intel and introduced in 1999 in their Pentium III series of Central processing units (CPUs) shortly after the appearance of Advanced Micro Devices (AMD's) 3DNow!." ([Streaming SIMD Extensions, wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions))
@@ -55,9 +63,13 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) environments. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on distributing tasks—[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) performed by processes or [threads](https://en.wikipedia.org/wiki/Thread_(computing))—across different processors." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
->"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) (also known as Thread level parallelism, function parallelism and control parallelism) is a form of parallel computing for multiple processors using a technique for distributing execution of processes and threads across different parallel processor nodes. It contrasts to data parallelism as another form of parallelism." [Task parallelism, Simple English wikipedia](https://simple.wikipedia.org/wiki/Task_parallelism)
+>"In contrast to data parallelism which involves running the same task on different components of data, [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is distinguished by running many different tasks at the same time on the same data." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
-## What is [Thread level parallelism]?
+>"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) (also known as Thread level parallelism, function parallelism and control parallelism) is a form of [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) for [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) using a technique for distributing execution of processes and [threads](https://en.wikipedia.org/wiki/Thread_(computing)) across different parallel processor nodes. It contrasts to data parallelism as another form of parallelism." [Task parallelism, Simple English wikipedia](https://simple.wikipedia.org/wiki/Task_parallelism)
+
+## What is [Thread level parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
+
+![Thread level parallelism](https://i.pinimg.com/originals/59/37/20/593720df6d7374598c27c70a5a26f6a8.png)
 
 >"Thread-level parallelism (TLP) is the parallelism inherent in an application that runs multiple threads at once." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
@@ -75,11 +87,13 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"[Thread](https://en.wikipedia.org/wiki/Thread_(computing)) is an execution unit that is part of a process." ([Process vs Thread: What’s the difference?, guru99](https://www.guru99.com/difference-between-process-and-thread.html))
 
+>"[Threads](https://en.wikipedia.org/wiki/Thread_(computing)) in the same process share the same address space." ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)))
+
 ## What is [Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture))?
 
 ![Multithreading](https://www.logicbig.com/quick-info/images/multithreading.png)
 
->"[Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple threads of execution concurrently, supported by the operating system" ([Multithreading, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
+>"[Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple [threads](https://en.wikipedia.org/wiki/Thread_(computing)) of execution [concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)), supported by the operating system" ([Multithreading, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
 
 >"[Multithreading](https://en.wikipedia.org/wiki/Thread_(computing)) can also be applied to one process to enable parallel execution on a multiprocessing system."
 
