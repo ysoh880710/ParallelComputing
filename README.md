@@ -31,17 +31,17 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ![Data parallelism](https://upload.wikimedia.org/wikipedia/commons/a/a7/Sequential_vs._Data_Parallel_job_execution.png)
 
->"[Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is parallelization across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments."
+>"[Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is parallelization across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments." ([Data parallelism, wikipedia](https://en.wikipedia.org/wiki/Data_parallelism))
 
 ## How to achieve [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)?
 
->"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system executing a [single set of instructions (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data), [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is achieved when each processor performs the same task on different distributed data."
+>"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system executing a [single set of instructions (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data), [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is achieved when each processor performs the same task on different distributed data." ([Data parallelism, wikipedia](https://en.wikipedia.org/wiki/Data_parallelism))
 
 ### What is [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)?
 
->"[Single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is a type of parallel processing in Flynn's taxonomy."
+>"[Single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is a type of parallel processing in Flynn's taxonomy." ([Single instruction, multiple data, wikipedia](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data))
 
->"The first widely deployed desktop [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) was with Intel's MMX extensions to the x86 architecture in 1996. This sparked the introduction of the much more powerful AltiVec system in the Motorola PowerPC and IBM's POWER systems. Intel responded in 1999 by introducing the all-new [SSE]() system."
+>"The first widely deployed desktop [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) was with Intel's MMX extensions to the x86 architecture in 1996. This sparked the introduction of the much more powerful AltiVec system in the Motorola PowerPC and IBM's POWER systems. Intel responded in 1999 by introducing the all-new [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) system." ([Single instruction, multiple data, wikipedia](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data))
 
 ### What is [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)?
 
@@ -59,7 +59,11 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ## What is [Thread level parallelism]?
 
-## How can [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) be achieved?
+>"Thread-level parallelism (TLP) is the parallelism inherent in an application that runs multiple threads at once." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
+
+>"The exploitation of thread-level parallelism has also begun to make inroads into the desktop market with the advent of [multi-core microprocessors](https://en.wikipedia.org/wiki/Multi-core_processor)." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
+
+## How to achieve [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
 
 >"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system, [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is achieved when each processor executes a different [thread](https://en.wikipedia.org/wiki/Thread_(computing)) (or process) on the same or different data." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
@@ -116,5 +120,9 @@ I found Stackoverflow definition more understandable.
 >"You can have multithreading on a single core machine, but you can only have parallelism on a multi core machine (or multi proc, but I treat them the same)." ([Threading/Concurrency vs Parallelism, danielmoth](http://www.danielmoth.com/Blog/threadingconcurrency-vs-parallelism.aspx))
 
 ## Conclusion
+
+|Data parallelism|Task parallelism|
+|---|---|
+|123|456|
 
 - [Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is one way to achieve concurrency, and it achieves parallelism under multi-core hardware environment.
