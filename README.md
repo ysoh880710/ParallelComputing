@@ -18,12 +18,7 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ## What types of parallelism are there?
 
-- Bit-level parallelism
-- Instruction-level parallelism
-- Task parallelism
-- Superword level parallelism
-
-([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
+>"There are several different forms of parallel computing: [bit-level](https://en.wikipedia.org/wiki/Bit-level_parallelism), [instruction-level](https://en.wikipedia.org/wiki/Instruction-level_parallelism), [data](https://en.wikipedia.org/wiki/Data_parallelism), and [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)." ([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
 
 - Data parallelism
 - Task parallelism
@@ -32,9 +27,27 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ([Types of Parallelism in Processing Execution, tutorialspoint](https://www.tutorialspoint.com/types-of-parallelism-in-processing-execution))
 
+## What is [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)?
+
+![Data parallelism](https://upload.wikimedia.org/wikipedia/commons/a/a7/Sequential_vs._Data_Parallel_job_execution.png)
+
+>"[Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is parallelization across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments."
+
+>"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system executing a [single set of instructions (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data), [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is achieved when each processor performs the same task on different distributed data."
+
+SSE instructions using xmm registers seem the example of parallel computing achieving data parallelism.
+
+*"[Streaming SIMD Extensions](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) (SSE) is a [single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instruction set extension to the x86 architecture, designed by Intel and introduced in 1999 in their Pentium III series of Central processing units (CPUs) shortly after the appearance of Advanced Micro Devices (AMD's) 3DNow!." ([Streaming SIMD Extensions, wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions))
+
+*Keyword note : [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data), [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)
+
 ## What is [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
 
 >"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) environments. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on distributing tasks—[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) performed by processes or [threads](https://en.wikipedia.org/wiki/Thread_(computing))—across different processors." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
+
+>"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) (also known as Thread level parallelism, function parallelism and control parallelism) is a form of parallel computing for multiple processors using a technique for distributing execution of processes and threads across different parallel processor nodes. It contrasts to data parallelism as another form of parallelism." [Task parallelism, Simple English wikipedia](https://simple.wikipedia.org/wiki/Task_parallelism)
+
+## What is [Thread level parallelism]?
 
 ## How can [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) be achieved?
 
