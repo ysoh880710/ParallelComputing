@@ -161,11 +161,11 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ## Definition
 
-[Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) is a type of computation in which many calculations or processes are carried out **simultaneously**."
+[Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) is a type of computation in which many calculations or processes are carried out **simultaneously**.
 
 ## Why [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)?
 
-- To solve problem or compute more things in same amount of time by computing in parallel.
+- To compute more task in same amount of time or same amount of task in shorter amount of time by computing smaller problems in parallel.
 
 ## What are the types of parallelism?
 
@@ -210,7 +210,7 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ##### What is the difference between [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and Parallelism?
 
-- Concurrency is at least two [threads](https://en.wikipedia.org/wiki/Thread_(computing)) making progress while parallelism is at least two threads being executed simultaneously.
+- [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) is at least two [threads](https://en.wikipedia.org/wiki/Thread_(computing)) making progress while parallelism is at least two threads being executed simultaneously.
 
 ##### How to achieve [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
@@ -229,7 +229,7 @@ It is not either [concurrent](https://en.wikipedia.org/wiki/Concurrency_(compute
 - Concurrent / Not parallel
 - Concurrent / Parallel
 
-**How does [threading](https://en.wikipedia.org/wiki/Thread_(computing)) or [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) relates to concurrency and parallelism?**
+**How does [threading](https://en.wikipedia.org/wiki/Thread_(computing)) or [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) relates to [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and parallelism?**
 Definition of thread clarifies this. [Thread](https://en.wikipedia.org/wiki/Thread_(computing)) is **"unit of execution flow"**.
 This "execution flow" can be managed independently by a scheduler, which is typically a part of the operating system.
 
@@ -245,8 +245,8 @@ This "execution flow" can be managed independently by a scheduler, which is typi
 
 **In short,**
 
-- Multithreading, or having multiple units of execution flow, is concurrent.
-- Multithreading itself is just having multiple units of execution flow. This has nothing to do with parallelism.
+- [Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)), or having multiple units of execution flow, is **[concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science))**.
+- [Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) itself is just having multiple units of execution flow. This has nothing to do with parallelism.
 
 - How operating system deals with multiple units of execution flow relates to parallelism.
 - Parallelism is achieved by operating system and hardware environment.
