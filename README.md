@@ -29,15 +29,17 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ([Types of Parallelism in Processing Execution, tutorialspoint](https://www.tutorialspoint.com/types-of-parallelism-in-processing-execution))
 
-### What is [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)?
+## [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)
+
+### Definition
 
 ![Data parallelism](https://upload.wikimedia.org/wikipedia/commons/a/a7/Sequential_vs._Data_Parallel_job_execution.png)
 
->"[Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is parallelization across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments. It focuses on distributing the data across different nodes, which operate on the data in parallel." ([Data parallelism, wikipedia](https://en.wikipedia.org/wiki/Data_parallelism))
+>"[Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is parallelization across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in parallel computing environments. It focuses on distributing the data across different nodes, which **operate on the data in parallel**." ([Data parallelism, wikipedia](https://en.wikipedia.org/wiki/Data_parallelism))
 
 ### How to achieve [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)?
 
->"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system executing a single set of instructions ([SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)), [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is achieved when each processor performs the same task on different distributed data." ([Data parallelism, wikipedia](https://en.wikipedia.org/wiki/Data_parallelism))
+>"In a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) system executing a single set of instructions ([SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)), [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) is achieved **when each processor performs the same task on different distributed data**." ([Data parallelism, wikipedia](https://en.wikipedia.org/wiki/Data_parallelism))
 
 #### What is [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)?
 
@@ -59,7 +61,9 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"**[SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is the 'concept', [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/AVX are implementations of the concept**." ([What's the difference between SIMD and SSE?, stackoverflow](https://stackoverflow.com/questions/30282271/whats-the-difference-between-simd-and-sse))
 
-### What is [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
+## [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)
+
+### Definition
 
 >"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of **parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) environments**. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on **distributing tasks—[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) performed by processes or [threads](https://en.wikipedia.org/wiki/Thread_(computing))—across different processors**." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
@@ -101,7 +105,7 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"Systems with a single processor generally implement [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) by time slicing: the central processing unit (CPU) switches between different software [threads](https://en.wikipedia.org/wiki/Thread_(computing)). This [context switching](https://en.wikipedia.org/wiki/Context_switch) usually occurs frequently enough that users perceive the [threads](https://en.wikipedia.org/wiki/Thread_(computing)) or tasks as running in parallel (for popular server/desktop operating systems, maximum time slice of a thread, when other threads are waiting, is often limited to 100-200ms). On a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) or [multi-core](https://en.wikipedia.org/wiki/Multi-core_processor) system, [multiple threads](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) can execute in parallel, with every processor or core executing a separate [thread](https://en.wikipedia.org/wiki/Thread_(computing)) simultaneously; on a processor or core with hardware [threads](https://en.wikipedia.org/wiki/Thread_(computing)), separate software [threads](https://en.wikipedia.org/wiki/Thread_(computing)) can also be executed [concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) by separate hardware [threads](https://en.wikipedia.org/wiki/Thread_(computing))." ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)))
 
-#### What is [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+##### What is [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
 >"[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome." ([Concurrency, wikipedia](https://en.wikipedia.org/wiki/Concurrency_(computer_science)))
 
@@ -109,7 +113,11 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"**A condition that exists when at least two [threads](https://en.wikipedia.org/wiki/Thread_(computing)) are making progress**. A more generalized form of parallelism that can include time-slicing as a form of virtual parallelism." ([Defining Multithreading Terms, oracle docs](https://docs.oracle.com/cd/E19455-01/806-5257/6je9h032b/index.html))
 
-#### What is the difference between Parallelism and [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+##### What is Parallelism?
+
+>"**A condition that arises when at least two threads are executing simultaneously**." ([Defining Multithreading Terms, oracle docs](https://docs.oracle.com/cd/E19455-01/806-5257/6je9h032b/index.html))
+
+##### What is the difference between [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and Parallelism?
 
 ![Parallelism vs Concurrency](https://i.stack.imgur.com/mUlNV.jpg)
 
@@ -119,17 +127,17 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) is about structure, parallelism is about execution, [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) provides a way to structure a solution to solve a problem that may (but not necessarily) be parallelizable." ([Concurrency, wikipedia](https://en.wikipedia.org/wiki/Concurrency_(computer_science)))
 
-#### How to achieve [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+##### How to achieve [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
 >"**In C++, the two most common ways of implementing [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) are through [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) and parallelism**." ([A tutorial on modern multithreading and concurrency in C++, educative.io](https://www.educative.io/blog/modern-multithreading-and-concurrency-in-cpp))
 
 >"**[Multi-threading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is what usually refers to concurrent programming**." ([How to use Multithreading and Multiprocessing - A Beginner's guide to parallel and concurrent programming, mineiros.io](https://www.mineiros.io/blog/guide-to-multihreading-and-multiprocessing#multi-threading))
 
-#### What is [Concurrent computing](https://en.wikipedia.org/wiki/Concurrent_computing)?
+##### What is [Concurrent computing](https://en.wikipedia.org/wiki/Concurrent_computing)?
 
 >"[Concurrent computing](https://en.wikipedia.org/wiki/Concurrent_computing) **is a form of computing in which several computations are executed [concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science))—during overlapping time periods—instead of sequentially—with one completing before the next starts**. This is a property of a system—whether a program, computer, or a network—where there is a separate execution point or "[thread](https://en.wikipedia.org/wiki/Thread_(computing)) of control" for each process. A [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) system is one where a computation can advance without waiting for all other computations to complete." ([Concurrent computing, wikipedia](https://en.wikipedia.org/wiki/Concurrent_computing))
 
-### Is [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or parallel?
+##### Is [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or parallel?
 
 >"Threads are a software construct. I can start as many pthreads as I want, even on an old single core processor. So **multi-threading is not necessarily parallel: it's only parallel if the hardware can support it. So if you have multiple cores and/or hyperthreading, your multi-threading becomes parallel**." ([Is multithreading concurrent or parallel?, quora](https://www.quora.com/Is-multithreading-concurrent-or-parallel))
 
@@ -139,7 +147,7 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"**You can have [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) on a single core machine, but you can only have parallelism on a [multi core](https://en.wikipedia.org/wiki/Multi-core_processor) machine (or multi proc, but I treat them the same)**." ([Threading/Concurrency vs Parallelism, danielmoth](http://www.danielmoth.com/Blog/threadingconcurrency-vs-parallelism.aspx))
 
-### Is Parallelism a subset of [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+###### Is Parallelism a subset of [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
 >"**Sorry, but this answer is incorrect**." ([Parallelism implies concurrency but not the other way round right?, stackexchange](https://softwareengineering.stackexchange.com/questions/155109/parallelism-implies-concurrency-but-not-the-other-way-round-right))
 
@@ -147,30 +155,95 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 - OK. Parallelism is NOT subset of concurrency.
 
-## Summary
+# Summary
 
-### Concurrency and parallelism are different level of category.
-It is not either concurrent or parallelism. It is either concurrent or not, and either parallel or not.
+# [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)
+
+## Definition
+
+[Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) is a type of computation in which many calculations or processes are carried out **simultaneously**."
+
+## Why [Parallel computing](https://en.wikipedia.org/wiki/Parallel_computing)?
+
+- To solve problem or compute more things in same amount of time by computing in parallel.
+
+## What are the types of parallelism?
+
+- [Bit-level parallelism](https://en.wikipedia.org/wiki/Bit-level_parallelism)
+- [Instruction-level parallelism](https://en.wikipedia.org/wiki/Instruction-level_parallelism)
+- [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)
+- [Task parallelism (Thread-level parallelism (TLP))](https://en.wikipedia.org/wiki/Task_parallelism)
+
+## [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)
+
+- Operate on the data in parallel.
+
+### How to achieve [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)?
+
+- [SIMD (Concept)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data)
+- [SSE (Implementation)](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)
+
+## [Task parallelism (Thread level parallelism)](https://en.wikipedia.org/wiki/Task_parallelism)
+
+- Running many different tasks simultaneously across different processors.
+- Running multiple [threads](https://en.wikipedia.org/wiki/Thread_(computing)) at once.
+
+### How to achieve [Task parallelism (Thread level parallelism)](https://en.wikipedia.org/wiki/Task_parallelism)?
+
+- By each processor executing a different [thread](https://en.wikipedia.org/wiki/Thread_(computing)) (or process) on the same or different data simultaneously.
+
+#### What is [Thread](https://en.wikipedia.org/wiki/Thread_(computing))?
+
+- Unit of execution flow.
+
+#### What is [Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture))?
+
+- Having multiple units of execution flow.
+
+##### What is [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+
+- A condition when at least two [threads](https://en.wikipedia.org/wiki/Thread_(computing)) are making progress.
+
+##### What is Parallelism?
+
+- A condition that arises when at least two [threads](https://en.wikipedia.org/wiki/Thread_(computing)) are executing simultaneously.
+
+##### What is the difference between [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and Parallelism?
+
+- Concurrency is at least two [threads](https://en.wikipedia.org/wiki/Thread_(computing)) making progress while parallelism is at least two threads being executed simultaneously.
+
+##### How to achieve [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+
+- By [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)).
+
+##### What is [Concurrent computing](https://en.wikipedia.org/wiki/Concurrent_computing)?
+
+- Computing [concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science))
+
+##### Is [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or parallel?
+
+**[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and parallelism are different level of category.**
+It is not either [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or parallelism. It is either [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or not, and either parallel or not.
 - Not concurrent (Sequential) / Not parallel
 - Not concurrent (Sequential) / Parallel
 - Concurrent / Not parallel
 - Concurrent / Parallel
 
-### Parallelism is not subset of concurrency.
-
-### How does threading or multithreading relates to concurrency and parallelism?
-Definition of thread clarifies this. Thread is **"unit of execution flow"**.
+**How does [threading](https://en.wikipedia.org/wiki/Thread_(computing)) or [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) relates to concurrency and parallelism?**
+Definition of thread clarifies this. [Thread](https://en.wikipedia.org/wiki/Thread_(computing)) is **"unit of execution flow"**.
 This "execution flow" can be managed independently by a scheduler, which is typically a part of the operating system.
 
-- Having a thread means having one unit of execution flow.
-- Having multiple threads (Multithreading) means having multiple units of execution flow.
+- Having a [thread](https://en.wikipedia.org/wiki/Thread_(computing)) means having one unit of execution flow.
+- Having multiple [threads](https://en.wikipedia.org/wiki/Thread_(computing)) ([Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture))) means having multiple units of execution flow.
 
-- Having multiple units of execution flow is having multiple things making progress, which is definition of concurrency.
+**And,**
+
+- Having multiple units of execution flow is having multiple things making progress, which is definition of [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)).
 
 - Multiple units of execution flow is done by time slicing in single core hardware environment.
 - Multiple units of execution flow is done in parallel in multi core hardware environment.
 
-### (Revisited) Is multithreading concurrent or parallel?
+**In short,**
 
 - Multithreading, or having multiple units of execution flow, is concurrent.
 - Multithreading itself is just having multiple units of execution flow. This has nothing to do with parallelism.
@@ -178,6 +251,10 @@ This "execution flow" can be managed independently by a scheduler, which is typi
 - How operating system deals with multiple units of execution flow relates to parallelism.
 - Parallelism is achieved by operating system and hardware environment.
 
-- "**Code can be concurrent, but not parallel**." ([Parallelism implies concurrency but not the other way round right?, stackexchange](https://softwareengineering.stackexchange.com/questions/155109/parallelism-implies-concurrency-but-not-the-other-way-round-right))
+- "**Code can be [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)), but not parallel**." ([Parallelism implies concurrency but not the other way round right?, stackexchange](https://softwareengineering.stackexchange.com/questions/155109/parallelism-implies-concurrency-but-not-the-other-way-round-right))
+
+###### Is Parallelism a subset of [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+
+- No. It is possible to have parallelism without [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) (such as [bit-level parallelism](https://en.wikipedia.org/wiki/Bit-level_parallelism)).
 
 # Put together by ysoh880710
