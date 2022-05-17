@@ -218,11 +218,12 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 ##### What is [Concurrent computing](https://en.wikipedia.org/wiki/Concurrent_computing)?
 
-- Computing [concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science))
+- Computing by two or more threads making progress.
 
 ##### Is [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or parallel?
 
 **[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and parallelism are different level of category.**
+
 It is not either [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or parallelism. It is either [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) or not, and either parallel or not.
 - Not concurrent (Sequential) / Not parallel
 - Not concurrent (Sequential) / Parallel
@@ -230,6 +231,7 @@ It is not either [concurrent](https://en.wikipedia.org/wiki/Concurrency_(compute
 - Concurrent / Parallel
 
 **How does [threading](https://en.wikipedia.org/wiki/Thread_(computing)) or [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) relates to [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) and parallelism?**
+
 Definition of thread clarifies this. [Thread](https://en.wikipedia.org/wiki/Thread_(computing)) is **"unit of execution flow"**.
 This "execution flow" can be managed independently by a scheduler, which is typically a part of the operating system.
 
