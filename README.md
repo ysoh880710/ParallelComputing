@@ -156,7 +156,7 @@ It is not either concurrent or parallelism. It is either concurrent or not, and 
 - Concurrent / Not parallel
 - Concurrent / Parallel
 
-### Parallelism is not subbset of concurrency.
+### Parallelism is not subset of concurrency.
 
 ### How does threading or multithreading relates to concurrency and parallelism?
 Definition of thread clarifies this. Thread is **"unit of execution flow"**.
@@ -178,8 +178,6 @@ This "execution flow" can be managed independently by a scheduler, which is typi
 - How operating system deals with multiple units of execution flow relates to parallelism.
 - Parallelism is achieved by operating system and hardware environment.
 
-- Therefore, adding a thread is equal to adding one concurrency
-
-- Having multiple threads means having "multiple "smallest sequence of programmed instructions" of execution concurrently, supported by the operating system". ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)) / [Multithread, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
+- "**Code can be concurrent, but not parallel**." ([Parallelism implies concurrency but not the other way round right?, stackexchange](https://softwareengineering.stackexchange.com/questions/155109/parallelism-implies-concurrency-but-not-the-other-way-round-right))
 
 # Put together by ysoh880710
