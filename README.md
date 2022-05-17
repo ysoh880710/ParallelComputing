@@ -147,42 +147,39 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 - OK. Parallelism is NOT subset of concurrency.
 
-### Summary
+## Summary
 
-- Adding a thread means adding "smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system". ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)))
+### Concurrency and parallelism are different level of category.
+It is not either concurrent or parallelism. It is either concurrent or not, and either parallel or not.
+- Not concurrent (Sequential) / Not parallel
+- Not concurrent (Sequential) / Parallel
+- Concurrent / Not parallel
+- Concurrent / Parallel
+
+### Parallelism is not subbset of concurrency.
+
+### How does threading or multithreading relates to concurrency and parallelism?
+Definition of thread clarifies this. Thread is **"unit of execution flow"**.
+This "execution flow" can be managed independently by a scheduler, which is typically a part of the operating system.
+
+- Having a thread means having one unit of execution flow.
+- Having multiple threads (Multithreading) means having multiple units of execution flow.
+
+- Having multiple units of execution flow is having multiple things making progress, which is definition of concurrency.
+
+- Multiple units of execution flow is done by time slicing in single core hardware environment.
+- Multiple units of execution flow is done in parallel in multi core hardware environment.
+
+### (Revisited) Is multithreading concurrent or parallel?
+
+- Multithreading, or having multiple units of execution flow, is concurrent.
+- Multithreading itself is just having multiple units of execution flow. This has nothing to do with parallelism.
+
+- How operating system deals with multiple units of execution flow relates to parallelism.
+- Parallelism is achieved by operating system and hardware environment.
 
 - Therefore, adding a thread is equal to adding one concurrency
 
 - Having multiple threads means having "multiple "smallest sequence of programmed instructions" of execution concurrently, supported by the operating system". ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)) / [Multithread, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
-
-I had hard time understanding why this yes or no binary question is always answered so long and complicated statements.
-
-**The answer is concurrent, and software thread has nothing to do with parallelism. The parallelism came to existence by multithreading in multi-core CPU is because of the increase in concurrency. This increase in concurrency is just executed in parallel due to multi-core environment.**
-
-
-## Conclusion
-
-### Parallel computing
-
-1. In parallel computing, there are 4 types of parallelism.
-- Data parallelism
-- Task parallelism (Thread level parallelism)
-- Bit level parallelism
-- Instruction level parallism
-
-### Data parallelism
-
-### Task parallelism (Thread level parallelism)
-
-### Difference between data and task parallelism
-
-|Data parallelism|Task parallelism|
-|---|---|
-|Same operations are performed on different subsets of same data.|Different operations are performed on the same or different data.|
-|Synchronous computation|Asynchronous computation|
-|Speedup is more as there is only one execution thread operating on all sets of data.|Speedup is less as each processor will execute a different thread or process on the same or different set of data.|
-|Amount of parallelization is proportional to the input data size.|Amount of parallelization is proportional to the number of independent tasks to be performed.|
-
-Task
 
 # Put together by ysoh880710
