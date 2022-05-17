@@ -14,13 +14,13 @@
 
 More advantages can be found. However, the [speedup](https://en.wikipedia.org/wiki/Speedup) in aspect of performance is mentioned in common and seems to be the core.
 
->"The primary goal of parallel computing is to increase available computation power for faster application processing and problem solving." ([Parallel Computing Definition, heavy.ai](https://www.heavy.ai/technical-glossary/parallel-computing))
+>"**The primary goal of [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) is to increase available computation power for faster application processing and problem solving**." ([Parallel Computing Definition, heavy.ai](https://www.heavy.ai/technical-glossary/parallel-computing))
 
 *Keyword note : [Speedup](https://en.wikipedia.org/wiki/Speedup), [Amdahl's law](https://en.wikipedia.org/wiki/Amdahl%27s_law)
 
 ## What are the types of parallelism?
 
->"There are several different forms of parallel computing: [bit-level](https://en.wikipedia.org/wiki/Bit-level_parallelism), [instruction-level](https://en.wikipedia.org/wiki/Instruction-level_parallelism), [data](https://en.wikipedia.org/wiki/Data_parallelism), and [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)." ([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
+>"There are several different forms of [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing): [bit-level](https://en.wikipedia.org/wiki/Bit-level_parallelism), [instruction-level](https://en.wikipedia.org/wiki/Instruction-level_parallelism), [data](https://en.wikipedia.org/wiki/Data_parallelism), and [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)." ([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
 
 - [Data parallelism](https://en.wikipedia.org/wiki/Data_parallelism)
 - [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)
@@ -53,15 +53,15 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 #### What is [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)?
 
->"[Streaming SIMD Extensions (SSE)](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) is a [single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instruction set extension to the x86 architecture, designed by Intel and introduced in 1999 in their Pentium III series of Central processing units (CPUs) shortly after the appearance of Advanced Micro Devices (AMD's) 3DNow!." ([Streaming SIMD Extensions, wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions))
+>"[Streaming SIMD Extensions (SSE)](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions) is a **[single instruction, multiple data (SIMD)](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) instruction set extension** to the x86 architecture, designed by Intel and introduced in 1999 in their Pentium III series of Central processing units (CPUs) shortly after the appearance of Advanced Micro Devices (AMD's) 3DNow!." ([Streaming SIMD Extensions, wikipedia](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions))
 
 #### What is the difference between [SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) and [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)?
 
->"[SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is the 'concept', [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/AVX are implementations of the concept." ([What's the difference between SIMD and SSE?, stackoverflow](https://stackoverflow.com/questions/30282271/whats-the-difference-between-simd-and-sse))
+>"**[SIMD](https://en.wikipedia.org/wiki/Single_instruction,_multiple_data) is the 'concept', [SSE](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions)/AVX are implementations of the concept**." ([What's the difference between SIMD and SSE?, stackoverflow](https://stackoverflow.com/questions/30282271/whats-the-difference-between-simd-and-sse))
 
 ### What is [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism)?
 
->"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) environments. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on **distributing tasks—[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) performed by processes or [threads](https://en.wikipedia.org/wiki/Thread_(computing))—across different processors**." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
+>"[Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is a form of **parallelization of computer code across [multiple processors](https://en.wikipedia.org/wiki/Multi-core_processor) in [parallel computing](https://en.wikipedia.org/wiki/Parallel_computing) environments**. [Task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) focuses on **distributing tasks—[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) performed by processes or [threads](https://en.wikipedia.org/wiki/Thread_(computing))—across different processors**." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
 >"In contrast to [data parallelism](https://en.wikipedia.org/wiki/Data_parallelism) which involves running the same task on different components of data, [task parallelism](https://en.wikipedia.org/wiki/Task_parallelism) is distinguished by **running many different tasks at the same time** on the same data." ([Task parallelism, wikipedia](https://en.wikipedia.org/wiki/Task_parallelism))
 
@@ -91,17 +91,19 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 
 >"**[Threads](https://en.wikipedia.org/wiki/Thread_(computing)) in the same process share the same address space**." ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)))
 
+>"**A Thread is a flow of execution.**" ([THREADS IN JAVA, medium](https://medium.com/nerd-for-tech/threads-in-java-b3b575d1030d))
+
 #### What is [Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture))?
 
 ![Multithreading](https://www.logicbig.com/quick-info/images/multithreading.png)
 
->"[Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple [threads](https://en.wikipedia.org/wiki/Thread_(computing)) of execution **[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science))**, supported by the operating system" ([Multithreading, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
+>"**[Multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple [threads](https://en.wikipedia.org/wiki/Thread_(computing)) of execution **[concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science))**, supported by the operating system**." ([Multithreading, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
 
 >"Systems with a single processor generally implement [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) by time slicing: the central processing unit (CPU) switches between different software [threads](https://en.wikipedia.org/wiki/Thread_(computing)). This [context switching](https://en.wikipedia.org/wiki/Context_switch) usually occurs frequently enough that users perceive the [threads](https://en.wikipedia.org/wiki/Thread_(computing)) or tasks as running in parallel (for popular server/desktop operating systems, maximum time slice of a thread, when other threads are waiting, is often limited to 100-200ms). On a [multiprocessor](https://en.wikipedia.org/wiki/Multi-core_processor) or [multi-core](https://en.wikipedia.org/wiki/Multi-core_processor) system, [multiple threads](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) can execute in parallel, with every processor or core executing a separate [thread](https://en.wikipedia.org/wiki/Thread_(computing)) simultaneously; on a processor or core with hardware [threads](https://en.wikipedia.org/wiki/Thread_(computing)), separate software [threads](https://en.wikipedia.org/wiki/Thread_(computing)) can also be executed [concurrently](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) by separate hardware [threads](https://en.wikipedia.org/wiki/Thread_(computing))." ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)))
 
 #### What is [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
->"[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome" ([Concurrency, wikipedia](https://en.wikipedia.org/wiki/Concurrency_(computer_science)))
+>"[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) is the ability of different parts or units of a program, algorithm, or problem to be executed out-of-order or in partial order, without affecting the final outcome." ([Concurrency, wikipedia](https://en.wikipedia.org/wiki/Concurrency_(computer_science)))
 
 >"[Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) is **when two or more tasks can start, run, and complete in overlapping time periods**." ([What is the difference between concurrency and parallelism?, stackoverflow](https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism))
 
@@ -136,6 +138,22 @@ More advantages can be found. However, the [speedup](https://en.wikipedia.org/wi
 >"**If your threads run on physical cores at the same time then they are parallel, otherwise they are just time-sharing or [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science))**." ([Are threads concurrent or parallel?, whatisany](https://whatisany.com/does-parallel-computing-use-multiple-threads/))
 
 >"**You can have [multithreading](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)) on a single core machine, but you can only have parallelism on a [multi core](https://en.wikipedia.org/wiki/Multi-core_processor) machine (or multi proc, but I treat them the same)**." ([Threading/Concurrency vs Parallelism, danielmoth](http://www.danielmoth.com/Blog/threadingconcurrency-vs-parallelism.aspx))
+
+### Is Parallelism a subset of [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
+
+>"**Sorry, but this answer is incorrect**." ([Parallelism implies concurrency but not the other way round right?, stackexchange](https://softwareengineering.stackexchange.com/questions/155109/parallelism-implies-concurrency-but-not-the-other-way-round-right))
+
+>"**it is possible to have parallelism without concurrency (such as bit-level parallelism)**" ([Parallel computing, wikipedia](https://en.wikipedia.org/wiki/Parallel_computing))
+
+- OK. Parallelism is NOT subset of concurrency.
+
+### Summary
+
+- Adding a thread means adding "smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system". ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)))
+
+- Therefore, adding a thread is equal to adding one concurrency
+
+- Having multiple threads means having "multiple "smallest sequence of programmed instructions" of execution concurrently, supported by the operating system". ([Thread, wikipedia](https://en.wikipedia.org/wiki/Thread_(computing)) / [Multithread, wikipedia](https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)))
 
 I had hard time understanding why this yes or no binary question is always answered so long and complicated statements.
 
