@@ -255,6 +255,12 @@ This "execution flow" can be managed independently by a scheduler, which is typi
 
 - "**Code can be [concurrent](https://en.wikipedia.org/wiki/Concurrency_(computer_science)), but not parallel**." ([Parallelism implies concurrency but not the other way round right?, stackexchange](https://softwareengineering.stackexchange.com/questions/155109/parallelism-implies-concurrency-but-not-the-other-way-round-right))
 
+I questioned about this in [stackoverflow](https://stackoverflow.com/questions/72270177/about-multithreading-concurrency-and-parallelism) to make sure.
+
+- **Parallelism Refers to any system in which a single application can make use of more computing hardware than a single CPU can provide**.
+- **Multithreading is a model of concurrent computing.**
+- **One way to achieve parallelism in an application running on an SMP system is to use multiple concurrent threads.**
+
 ###### Is Parallelism a subset of [Concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science))?
 
 - No. It is possible to have parallelism without [concurrency](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) (such as [bit-level parallelism](https://en.wikipedia.org/wiki/Bit-level_parallelism)).
